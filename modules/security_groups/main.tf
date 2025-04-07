@@ -1,7 +1,6 @@
-# Web Security Group
 resource "aws_security_group" "web" {
   name        = "web-sg"
-  description = "Allow HTTP and SSH from user IP"
+  description = "Allow HTTP and SSH from my IP"
   vpc_id      = var.vpc_id
 
   ingress {
@@ -13,11 +12,11 @@ resource "aws_security_group" "web" {
   }
 
   ingress {
-    description = "SSH from user IP"
+    description = "SSH from my IP"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = [var.user_ip]
+    cidr_blocks = ["117.204.206.202/32"]
   }
 
   egress {
@@ -32,14 +31,13 @@ resource "aws_security_group" "web" {
   }
 }
 
-# Database Security Group
 resource "aws_security_group" "db" {
   name        = "db-sg"
-  description = "Allow database access from web servers"
+  description = "Allow MySQL/Postgres from web SG"
   vpc_id      = var.vpc_id
 
   ingress {
-    description     = "MySQL from web servers"
+    description     = "MySQL from web SG"
     from_port       = 3306
     to_port         = 3306
     protocol        = "tcp"

@@ -1,9 +1,5 @@
-variable "vpc_cidr" {
-  description = "CIDR block for the VPC"
+variable "aws_region" {
+  description = "AWS region"
   type        = string
-  default     = "10.0.0.0/16"
-}
-
-data "aws_availability_zones" "available" {
-  state = "available"
+  default     = "us-east-1"
 }
