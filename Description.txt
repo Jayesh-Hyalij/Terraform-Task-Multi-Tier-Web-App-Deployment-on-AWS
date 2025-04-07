@@ -1,0 +1,16 @@
+Create a VPC
+
+With 2 public & 2 private subnets (in different AZs)
+Attach an Internet Gateway
+Setup proper route tables
+Launch EC2 Instances
+
+Public EC2 (Web server with NGINX)
+Private EC2 (Database server, MySQL/Postgres)
+Create Security Groups
+
+Web SG: Allow HTTP (80) & SSH (22) from your IP
+DB SG: Allow MySQL/Postgres only from Web SG
+Modularize the Code
+
+Create reusable modules for VPC, EC2, SGs
