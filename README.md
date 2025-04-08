@@ -126,7 +126,7 @@ Notes
 
 The `terraform init` command initializes the working directory containing Terraform configuration files. It downloads the required provider plugins and sets up the backend if configured.
 
-![Terraform init](Snapshot/Screenshot(1).png)
+![Terraform Init](Snapshot/terraform-init.png)
 
 ### Terraform Plan
 
