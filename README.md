@@ -132,8 +132,8 @@ The `terraform init` command initializes the working directory containing Terraf
 
 The `terraform plan` command creates an execution plan, showing what actions Terraform will take to achieve the desired state. It helps verify infrastructure changes before applying them.
 
-![Terraform Plan](./Snapshot/Screenshots(2).png)
-(./Snapshot/Screenshots(3).png)
+![Terraform Plan](./Snapshot/terraform-plan.png)
+(./Snapshot/terraform-plan(1).png)
 
 ### Terraform Apply
 
