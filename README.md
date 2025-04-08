@@ -24,11 +24,11 @@ This project sets up a custom Virtual Private Cloud (VPC) on AWS using Terraform
                    |           Route Table       |
                    +-----------------------------+
                      |                       |
-     +--------------------------+   +--------------------------+
-     |     Public Subnet 1      |   |     Public Subnet 2      |
-     |     (AZ-a)               |   |     (AZ-b)               |
-     |  EC2: Web Server (NGINX) |   |  EC2: Web Server (NGINX) |
-     +--------------------------+   +--------------------------+
+       +--------------------------+   +--------------------------+
+       |     Public Subnet 1      |   |     Public Subnet 2      |
+       |     (AZ-a)               |   |     (AZ-b)               |
+       |  EC2: Web Server (NGINX) |   |  EC2: Web Server (NGINX) |
+       +--------------------------+   +--------------------------+
                      |                       |
              +----------------+     +----------------+
              | Web SG: Allow  |     | Web SG: Allow  |
