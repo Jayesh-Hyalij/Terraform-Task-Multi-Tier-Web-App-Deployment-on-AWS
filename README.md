@@ -118,3 +118,36 @@ Notes
   - Replace AMI IDs and IPs with region-specific and authorized values.
   - Use terraform destroy to tear down the setup after use.
 
+---
+
+## 📸 Snapshots
+
+### Terraform Init
+
+The `terraform init` command initializes the working directory containing Terraform configuration files. It downloads the required provider plugins and sets up the backend if configured.
+
+![Terraform Init](./Snapshot/Screenshot(1).png)
+
+### Terraform Plan
+
+The `terraform plan` command creates an execution plan, showing what actions Terraform will take to achieve the desired state. It helps verify infrastructure changes before applying them.
+
+![Terraform Plan](./Snapshot/Screenshots(2).png)
+(./Snapshot/Screenshots(3).png)
+
+### Terraform Apply
+
+The `terraform apply` command executes the actions proposed in the plan to provision infrastructure. It creates or updates resources in your defined AWS environment.
+
+![Terraform Apply](./Snapshot/Screenshots(4).png)
+(./Snapshot/Screenshots(5).png)
+
+### AWS Console: VPC & Resources Overview
+
+This screenshot from the AWS Management Console shows the successfully created networking components using Terraform — including the custom VPC, public and private subnets, route tables, internet gateway, and EC2 instances. It visually confirms that the infrastructure has been provisioned as expected.
+
+![AWS GUI VPC Overview](./Snapshot/Screenshot(6).png)
+(./Snapshot/Screenshot(7).png)
+(./Snapshot/Screenshot(8).png)
+(./Snapshot/Screenshot(9).png)
+(./Snapshot/Screenshot(10).png)
