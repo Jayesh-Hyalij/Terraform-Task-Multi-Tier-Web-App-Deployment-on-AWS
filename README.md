@@ -129,29 +129,54 @@ The `terraform init` command initializes the working directory containing Terraf
 ![Terraform Init](Snapshot/terraform-init.png)
 
 
-
+--
 ### Terraform Plan
 
 The `terraform plan` command creates an execution plan, showing what actions Terraform will take to achieve the desired state. It helps verify infrastructure changes before applying them.
 
 ![Terraform Plan](./Snapshot/terraform-plan.png)
+--
 ![Terraform Plan(1)](./Snapshot/terraform-plan(1).png)
 
 
-
+--
 ### Terraform Apply
 
 The `terraform apply` command executes the actions proposed in the plan to provision infrastructure. It creates or updates resources in your defined AWS environment.
 
-![Terraform Apply](./Snapshot/Screenshots(4).png)
-(./Snapshot/Screenshots(5).png)
+![Terraform Apply](./Snapshot/terraform-apply.png)
+--
+![Terraform Apply](./Snapshot/terraform-apply(1).png)
 
+
+--
 ### AWS Console: VPC & Resources Overview
 
 This screenshot from the AWS Management Console shows the successfully created networking components using Terraform — including the custom VPC, public and private subnets, route tables, internet gateway, and EC2 instances. It visually confirms that the infrastructure has been provisioned as expected.
 
-![AWS GUI VPC Overview](./Snapshot/Screenshot(6).png)
-(./Snapshot/Screenshot(7).png)
-(./Snapshot/Screenshot(8).png)
-(./Snapshot/Screenshot(9).png)
-(./Snapshot/Screenshot(10).png)
+![AWS GUI VPC Overview](./Snapshot/AWS-GUI-VPC-Overview.png)
+--
+![AWS GUI VPC Overview](./Snapshot/AWS-GUI-VPC-Overview(1).png)
+--
+![AWS GUI VPC Overview](./Snapshot/AWS-GUI-VPC-Overview(2).png)
+--
+![AWS GUI VPC Overview](./Snapshot/AWS-GUI-VPC-Overview(3).png)
+--
+![AWS GUI VPC Overview](./Snapshot/AWS-GUI-VPC-Overview(4).png)
+
+
+---
+
+## 🔗 Additional Resources
+
+- [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
+- [AWS Free Tier](https://aws.amazon.com/free)
+
+---
+
+## 🙌 Author
+
+**Jayesh Hyalij**  
+📧 jhyalij940@gmail.com  
+🔗 [GitHub](https://github.com/Jayesh-Hyalij)
+
